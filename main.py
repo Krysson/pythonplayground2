@@ -1,3 +1,5 @@
+import todolist
+# import json
 # VARIABLES
 
 # x = 2
@@ -15,16 +17,15 @@
 
 # DICTIONARIES
 
-person = {
-  'first_name': 'Mike',
-  'last_name': 'Smith',
-  'age': 47
-}
+# person = {'first_name': 'Mike', 'last_name': 'Smith', 'age': 47}
 
-people = [
-  {'first_name': 'Mike', 'age': 47},
-  {'first_name': 'Kevin', 'age': 29 }
-]
+# people = [{
+#     'first_name': 'Mike',
+#     'age': 47
+# }, {
+#     'first_name': 'Kevin',
+#     'age': 29
+# }]
 
 # person['phone'] = '555-555-5555'
 
@@ -36,7 +37,7 @@ people = [
 # name = 'Mike'
 # age = 47
 
-print(f'Hello {people[1]["first_name"]}, you are {people[0]["age"]} years old')
+# print(f'Hello {people[1]["first_name"]}, you are {people[0]["age"]} years old')
 
 # # FILES
 
@@ -68,19 +69,31 @@ print(f'Hello {people[1]["first_name"]}, you are {people[0]["age"]} years old')
 #JSON
 # JSON is commonly used with data APIS. Here how we can parse JSON into a Python dictionary
 
-import json
-
 #  Sample JSON
-userJSON = '{"first_name": "John", "last_name": "Doe", "age": 30}'
+# userJSON = '{"first_name": "John", "last_name": "Doe", "age": 30}'
 
-# Parse to dict
-user = json.loads(userJSON)
+# # Parse to dict
+# user = json.loads(userJSON)
 
-# print(user)
-print(user['first_name'])
+# # print(user)
+# print(user['first_name'])
 
-car = {'make': 'Ford', 'model': 'Mustang', 'year': 1970}
+# car = {'make': 'Ford', 'model': 'Mustang', 'year': 1977}
 
-carJSON = json.dumps(car)
+# carJSON = json.dumps(car)
 
-print(carJSON)
+# print(carJSON)
+
+
+# import tkinter as tk
+
+# window = tk.Tk()
+# window.title("Hello world")
+# window.geometry("300x300")
+
+# hello = tk.Label(text="Hello world!")
+# hello.pack()
+# button = tk.Button(text="Click me!")
+# button.pack()
+
+# tk.mainloop()
