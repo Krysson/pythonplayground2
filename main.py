@@ -1,4 +1,4 @@
-import todolist
+import todolist.py
 # import json
 # VARIABLES
 

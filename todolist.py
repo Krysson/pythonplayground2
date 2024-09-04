@@ -10,11 +10,12 @@ while True:
         todos.append(todo)
       case 'view' | 'show':
         for todo in todos:
-          print(todo)
+          print(todo.capitalize())
       case 'edit':
         number = int(input("Number of the todo to edit: "))
-        existing_todo = todos[number]
-        print(existing_todo)
+        number = number - 1
+        new_todo = input("Enter the new todo: ")
+        todos[number] = new_todo        
       case 'quit' | 'q':
         break
 
