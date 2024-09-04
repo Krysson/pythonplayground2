@@ -1,4 +1,3 @@
-import todolist.py
 # import json
 # VARIABLES
 
