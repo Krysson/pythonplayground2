@@ -8,9 +8,12 @@ while True:
       case 'add' | 'a':
         todo = input("Enter a todo: ")
         todos.append(todo)
-      case 'view' | 'show':
-        for index, todo in enumerate(todos):
-            print(f"{index + 1}. {todo.capitalize()}")
+      case 'view' | 'show' | 's':
+        for index, item in enumerate(todos):
+            row = f'{index + 1}. {item.capitalize()}'
+            print(row)
+        # print(f"You have {index + 1} items on you Todo list")  -> is a work around
+        print(f" You have {len(todos)} items on your Todo List") # <- is correct
       case 'edit' | 'e':
         number = int(input("Number of the todo to edit: "))
         number = number - 1
