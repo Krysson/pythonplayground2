@@ -1,6 +1,3 @@
-"""todo module to manage todo list."""
-todos = []
-
 while True:
     user_action = input(
         "Enter 'add', 'view', 'edit', 'done' to complete a task or 'quit' to quit: ")
@@ -8,14 +5,22 @@ while True:
 
     match  user_action:
         case 'add' | 'a':
-            todo = input("Enter a todo: ")
+            todo = input("Enter a todo: ") + "\n"
+
+            file = open('todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             todos.append(todo)
+
+            file = open('todos.txt', 'w')
+            file.writelines(todos)
+            file.close()
         case 'view' | 'show' | 's':
             for index, item in enumerate(todos):
                 row = f'{index + 1}. {item.capitalize()}'
                 print(row)
-            # print(f"You have {index + 1} items on you Todo list")  -> is a work around
-            # <- is correct
+
             print(f" You have {len(todos)} items on your Todo List")
         case 'edit' | 'e':
             number = int(input("Number of the todo to edit: "))
