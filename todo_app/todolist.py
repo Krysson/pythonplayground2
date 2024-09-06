@@ -13,21 +13,18 @@ while True:
             # Add a new todo item
             todo = input("Enter a todo: ") + "\n"
 
-            file = open('todo_app/todos.txt', 'r')
-            todos = file.readlines()
-            file.close()
+            with open('todo_app/todos.txt', 'r') as file:
+                todos = file.readlines()
 
             todos.append(todo)
 
-            file = open('todo_app/todos.txt', 'w')
-            file.writelines(todos)
-            file.close()
+            with open('todo_app/todos.txt', 'w') as file:
+                file.writelines(todos)
 
         case 'view' | 'show' | 's':
             # View all todo items
-            file = open('todo_app/todos.txt', 'r')
-            todos = file.readlines()
-            file.close()
+            with open('todo_app/todos.txt', 'r') as file:
+                todos = file.readlines()
 
             for index, item in enumerate(todos):
                 item = item.strip('\n')
