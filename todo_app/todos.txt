@@ -1,4 +1,7 @@
 prepare
 shower
 play
-fix
+fixbatch
+play
+batch
+sort pile
