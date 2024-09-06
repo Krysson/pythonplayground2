@@ -1,3 +1,4 @@
+#  enumerate over a string and capitalize/mutate it
 waiting_list = ["sen", "ben", "john"]
 waiting_list.sort()
 

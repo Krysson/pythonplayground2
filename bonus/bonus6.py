@@ -1,3 +1,4 @@
+# create files in different directories -> write information to them
 contents = ["All carrots are to be sliced longways.",
             "The carrots were reportedly sliced.",
             "The slicing process was well presented."]
