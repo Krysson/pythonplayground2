@@ -1,9 +1,5 @@
 prepare
 shower
-play
-fix batch
-play
-batch
+write
 sort pile
 park
-test

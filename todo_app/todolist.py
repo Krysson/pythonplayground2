@@ -37,13 +37,32 @@ while True:
             # Edit an existing todo item
             number = int(input("Number of the todo to edit: "))
             number = number - 1
+
+            with open('todo_app/todos.txt', 'r') as file:
+                todos = file.readlines()
+
             new_todo = input("Enter the new todo: ")
-            todos[number] = new_todo
+            todos[number] = new_todo + '\n'
+
+            with open('todo_app/todos.txt', 'w') as file:
+                file.writelines(todos)
 
         case 'complete' | 'done':
             # Mark a todo item as complete (remove it from the list)
             number = int(input("Number of the list to complete?: "))
-            todos.pop(number - 1)
+
+            with open('todo_app/todos.txt', 'r') as file:
+                todos = file.readlines()
+
+            index = number - 1
+            todo_to_remove = todos[index].strip('\n')
+            todos.pop(index)
+
+            with open('todo_app/todos.txt', 'w') as file:
+                file.writelines(todos)
+
+            message = f"Task {todo_to_remove.capitalize()} has been removed."
+            print(message)
 
         case 'quit' | 'q':
             # Exit the loop and end the program
