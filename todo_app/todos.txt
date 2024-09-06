@@ -1,7 +1,7 @@
 prepare
 shower
 play
-fixbatch
+fix batch
 play
 batch
 sort pile
