@@ -1,5 +1,5 @@
-prepare
-shower
-write
+clean
+throw
+play a game
 sort pile
-park
+Park the car

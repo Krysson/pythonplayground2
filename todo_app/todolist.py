@@ -60,7 +60,6 @@ while True:
 
             with open('todo_app/todos.txt', 'w') as file:
                 file.writelines(todos)
-
             message = f"Task {todo_to_remove.capitalize()} has been removed."
             print(message)
 
