@@ -1,3 +1,4 @@
+from todo_app.todolist import *
 # import json
 # VARIABLES
 

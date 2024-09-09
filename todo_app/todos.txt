@@ -1,5 +1,4 @@
 clean
 throw
-play a game
-sort pile
+Meet
 Park the car
